@@ -5,10 +5,9 @@ import { totalmem } from 'os';
 const meta = {
   title: 'Example/BurgerConstructorElement',
   component: BurgerConstructorElementUI,
-  
+
   tags: ['autodocs'],
   parameters: {
-    
     layout: 'fullscreen'
   }
 } satisfies Meta<typeof BurgerConstructorElementUI>;

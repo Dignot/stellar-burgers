@@ -4,10 +4,9 @@ import type { Meta, StoryObj } from '@storybook/react';
 const meta = {
   title: 'Example/ProfileMenu',
   component: ProfileMenuUI,
-  
+
   tags: ['autodocs'],
   parameters: {
-    
     layout: 'fullscreen'
   }
 } satisfies Meta<typeof ProfileMenuUI>;

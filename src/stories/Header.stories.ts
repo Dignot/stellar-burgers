@@ -5,10 +5,9 @@ import { AppHeaderUI } from '@ui';
 const meta = {
   title: 'Example/Header',
   component: AppHeaderUI,
-  
+
   tags: ['autodocs'],
   parameters: {
-    
     layout: 'fullscreen'
   }
 } satisfies Meta<typeof AppHeaderUI>;

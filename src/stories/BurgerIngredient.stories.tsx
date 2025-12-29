@@ -5,10 +5,9 @@ import type { Meta, StoryObj } from '@storybook/react';
 const meta = {
   title: 'Example/BurgerIngredient',
   component: BurgerIngredientUI,
-  
+
   tags: ['autodocs'],
   parameters: {
-    
     layout: 'fullscreen'
   },
   decorators: [

@@ -5,10 +5,9 @@ import type { Meta, StoryObj } from '@storybook/react';
 const meta = {
   title: 'Example/OrderDetails',
   component: OrderDetailsUI,
-  
+
   tags: ['autodocs'],
   parameters: {
-    
     layout: 'fullscreen'
   },
   decorators: [

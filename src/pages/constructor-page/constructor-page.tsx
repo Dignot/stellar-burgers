@@ -9,7 +9,6 @@ import { FC } from 'react';
 import { getIsLoading } from '../../services/slices/ingredientsSlice';
 
 export const ConstructorPage: FC = () => {
-  
   const isIngredientsLoading = useSelector(getIsLoading);
   console.log('isIngredientsLoading', isIngredientsLoading);
   return (

@@ -4,10 +4,9 @@ import type { Meta, StoryObj } from '@storybook/react';
 const meta = {
   title: 'Example/BurgerConstructor',
   component: BurgerConstructorUI,
-  
+
   tags: ['autodocs'],
   parameters: {
-    
     layout: 'fullscreen'
   }
 } satisfies Meta<typeof BurgerConstructorUI>;

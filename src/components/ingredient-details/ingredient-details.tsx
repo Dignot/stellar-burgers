@@ -7,7 +7,6 @@ import { useLocation } from 'react-router-dom';
 import { getIngredientsData } from '../../services/slices/ingredientsSlice';
 
 export const IngredientDetails: FC = () => {
-  
   const location = useLocation();
   const ingredients = useSelector(getIngredientsData);
   const ingredientToFind = location.pathname.replace('/ingredients/', '');

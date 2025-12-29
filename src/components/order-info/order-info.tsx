@@ -11,7 +11,6 @@ import {
 import { getIngredientsData } from '../../services/slices/ingredientsSlice';
 
 export const OrderInfo: FC = () => {
-  
   const currentNumber = Number(useParams().number);
   const dispatch = useDispatch();
   useEffect(() => {

@@ -7,7 +7,6 @@ import { useSelector } from 'react-redux';
 import { getIngredientsData } from '../../services/slices/ingredientsSlice';
 
 export const BurgerIngredients: FC = () => {
-  
   const ingredients = useSelector(getIngredientsData);
   const buns = useMemo(
     () => ingredients.filter((ingredient) => ingredient.type === 'bun'),

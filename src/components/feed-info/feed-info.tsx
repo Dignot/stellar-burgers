@@ -16,7 +16,6 @@ const getOrders = (orders: TOrder[], status: string): number[] =>
     .slice(0, 20);
 
 export const FeedInfo: FC = () => {
-  
   const orders: TOrder[] = useSelector(getOrdersData);
   const totalFeeds = useSelector(getTotalOrders);
   const todayFeeds = useSelector(getTodayOrders);

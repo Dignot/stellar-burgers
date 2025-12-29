@@ -51,7 +51,6 @@ describe('burgerConstructor slice reducer', () => {
     state = burgerConstructorSliceReducer(state, ingB);
     expect(state.constructorIngredients.length).toBe(2);
 
-    
     state = burgerConstructorSliceReducer(
       state,
       removeIngredientFromConstructor(ingB.payload.id)
@@ -73,7 +72,6 @@ describe('burgerConstructor slice reducer', () => {
     const idsBefore = state.constructorIngredients.map((i) => i.id);
     expect(idsBefore.length).toBe(3);
 
-    
     state = burgerConstructorSliceReducer(
       state,
       upPositionOfIngredient(b.payload.id)
@@ -81,13 +79,12 @@ describe('burgerConstructor slice reducer', () => {
     const idsAfterUp = state.constructorIngredients.map((i) => i.id);
     expect(idsAfterUp[0]).toBe(b.payload.id);
 
-    
     state = burgerConstructorSliceReducer(
       state,
       downPositionOfIngredient(b.payload.id)
     );
     const idsAfterDown = state.constructorIngredients.map((i) => i.id);
-    
+
     expect(idsAfterDown[0]).not.toBe(b.payload.id);
   });
 
