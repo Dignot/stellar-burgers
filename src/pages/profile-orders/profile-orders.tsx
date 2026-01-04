@@ -5,7 +5,6 @@ import { useSelector } from '../../services/store';
 import { getOrders } from '../../services/slices/userSlice';
 
 export const ProfileOrders: FC = () => {
-  /** TODO: взять переменную из стора */
   const orders: TOrder[] = useSelector(getOrders);
 
   return <ProfileOrdersUI orders={orders} />;

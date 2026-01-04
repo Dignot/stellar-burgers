@@ -19,7 +19,7 @@ import {
 export const BurgerConstructor: FC = () => {
   const navigate = useNavigate();
   const isAuthenticated = useSelector(getUserAuthStatus);
-  /** TODO: взять переменные constructorItems, orderRequest и orderModalData из стора */
+
   const constructorIngredients = useSelector(getConstructorIngredients);
   const constructorBun = useSelector(getConstructorBun);
   const dispatch = useDispatch();
@@ -45,7 +45,6 @@ export const BurgerConstructor: FC = () => {
 
     dispatch(newUserOrder(ingredientsId));
     dispatch(resetConstructor());
-    // dispatch(getAllFeeds());
   };
   const closeOrderModal = () => dispatch(setLastOrder(null));
 

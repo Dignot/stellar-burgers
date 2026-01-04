@@ -29,26 +29,30 @@ export const RegisterUI: FC<RegisterUIProps> = ({
         <>
           <div className='pb-6'>
             <Input
-              type='text'
-              placeholder='Имя'
-              onChange={(e) => setUserName(e.target.value)}
-              value={userName}
-              name='name'
-              error={false}
-              errorText=''
-              size='default'
+              {...({
+                type: 'text',
+                placeholder: 'Имя',
+                onChange: (e: any) => setUserName(e.target.value),
+                value: userName,
+                name: 'name',
+                error: false,
+                errorText: '',
+                size: 'default'
+              } as any)}
             />
           </div>
           <div className='pb-6'>
             <Input
-              type='email'
-              placeholder='E-mail'
-              onChange={(e) => setEmail(e.target.value)}
-              value={email}
-              name={'email'}
-              error={false}
-              errorText=''
-              size={'default'}
+              {...({
+                type: 'email',
+                placeholder: 'E-mail',
+                onChange: (e: any) => setEmail(e.target.value),
+                value: email,
+                name: 'email',
+                error: false,
+                errorText: '',
+                size: 'default'
+              } as any)}
             />
           </div>
           <div className='pb-6'>
